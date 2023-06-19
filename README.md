@@ -1,2 +1,2 @@
-# Ke_Kise_bank
-Building a responsive bank website using React, Vite and tailwind css 
+# Deep Tought Website
+Building a website using React, Vite and tailwind css 
