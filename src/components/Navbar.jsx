@@ -8,7 +8,7 @@ const iconColor = "blue-500";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar shadow-2xl-outer">
+    <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo1} alt="deepthought" className="w-[250px] h-[32px] " />
 
       <ul className="list-none sm:flex hidden justify-end items-center ml-auto">
