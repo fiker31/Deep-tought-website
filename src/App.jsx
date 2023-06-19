@@ -13,7 +13,7 @@ const App = () => (
        </div>
       </div>
      
-       <div className="flex">
+       <div className={`${styles.length}`}>
          <Journeyboard/>
          </div>
         </div>
