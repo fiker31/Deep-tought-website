@@ -1,2 +1,2 @@
 # Deep Tought Website
-Building a website using React, Vite and tailwind css 
+Building a website using React, Vite, Material UI and tailwind css 
