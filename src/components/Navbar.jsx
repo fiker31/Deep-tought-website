@@ -3,7 +3,6 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import HouseIcon from "@mui/icons-material/House";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-
 const iconColor = "blue-500";
 
 const Navbar = () => {
