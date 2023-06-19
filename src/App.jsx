@@ -7,12 +7,12 @@ const App = () => (
 
     <div className='bg-gray-200 w-full overflow-hidden'>
      <div className={`${styles.paddingX} ${styles.flexCenter} `}>
+      
       <div className={`${styles.boxWidth}`}>
           <Navbar/>
       </div>
        </div>
-      </div>
-     
+      </div>   
        <div className={`${styles.length}`}>
          <Journeyboard/>
          </div>
