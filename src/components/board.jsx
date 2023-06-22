@@ -5,7 +5,7 @@ const Board = ({ title, icon, children, vertical, header }) => {
     <div
       className={`flex ${
         vertical ? "flex-row" : "flex-col"
-      } bg-white rounded-lg border-2 border-gray-300 shadow-xl overflow-hidden w-full h-full`}
+      } bg-white rounded-3xl border-2 border-gray-300 shadow-xl overflow-hidden w-full h-full`}
     >
       <div
         className={`bg-black flex items-center justify-center relative ${
