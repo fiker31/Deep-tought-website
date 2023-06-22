@@ -163,13 +163,34 @@ const Body = () => {
     <div class=" bg-gray-100 w-full h-14 px-10 items-center flex mx-10 relative">
     
     <KeyboardArrowUpIcon color="black" />
-              <h3 className="ml-16 text-lg">Introduction</h3>
+              <h3 className="ml-1 text-lg font-semibold">Introduction</h3>
     </div>
     <div className="px-14 py-5" > 
       The 4SA Method , How to bring a idea into progress ?
       </div>
       <div className="py-5 text-gray-400 font-semibold content-between"> 
       See More
+      </div>
+      <div class=" bg-white w-full h-14 px-10 items-center border-2 flex mx-10 relative">
+    
+    <KeyboardArrowUpIcon color="black" />
+              <h3 className="ml-1 text-lg font-semibold">Thread A</h3>
+    </div>
+    <div className="px-14 py-5" > 
+    How are you going to develop your stratergy ? 
+    Which method are you going to use to develop a stratergy ? 
+    What if the project is lengthy?
+      </div>
+      <div className="py-5 text-gray-400 font-semibold content-between"> 
+      See More
+      </div>
+      <div class=" bg-white w-full h-14 px-10 items-center border-2 flex mx-16 relative">
+    
+  
+              <h3 className="ml-1 text-lg font-semibold">Example 1</h3>
+    </div>
+    <div className="px-14 py-5" > 
+    You have a concept , How will you put into progress?
       </div>
 
 
