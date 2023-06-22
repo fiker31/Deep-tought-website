@@ -193,10 +193,7 @@ const Body = () => {
     <div className="px-14 py-5" > 
     You have a concept , How will you put into progress?
       </div>
-
-
-          
-        </Board>
+      </Board>
         <img src={blueicons} alt="icons" className="mx-auto justify-end" />
       </div>
     </div>
