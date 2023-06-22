@@ -7,7 +7,7 @@ import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import CommentIcon from "@mui/icons-material/Comment";
 import LiveHelpIcon from "@mui/icons-material/LiveHelp";
 import AddIcon from "@mui/icons-material/Add";
-
+import youtube from "../assets/youtube.png" ;
 const Body = () => {
   return (
     <div className="grid gap-y-10">
@@ -36,10 +36,8 @@ const Body = () => {
          header="Story of Alignment Scope of Agility Specific Accountable Staggering Approach"
         >
           <div>
-            
+          <img src={youtube} alt="Deeptought channel" />;
           </div>
-
-
         </Board>
         <Board
           title="Threadbuild"
@@ -82,12 +80,52 @@ const Body = () => {
             </div>
           </div>
         </Board>
-        <Board>
-
-
-
+        <Board
+          title="Structure Your Pointers"
+          icon={<InfoIcon color="white" />}
+          header="Write a 300 - 400 word article from your thread . Publish your understanding and showcase your understanding to the entire world "
+        >
+          <div>
+            <div className="flex p-2 bg-yellow-100 items-center">
+              <KeyboardArrowUpIcon color="black" />
+              <h3 className="ml-16 font-bold text-lg">Thread A</h3>
+            </div>
+            <div className="m-8 grid grid-cols-2 gap-x-4 gap-y-4">
+              <Form label="Sub thread 1" />
+              <Form label="Sub Interpretation 1" />
+              <div className="flex justify-end items-center">
+                <div className="grid grid-cols-4 gap-2">
+                  <LightbulbIcon color="black" />
+                  <CommentIcon color="black" />
+                  <LiveHelpIcon color="black" />
+                  <LiveHelpIcon color="black" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-x-0.5">
+                <div className="flex justify-between items-center px-1 py-3 rounded-lg shadow-lg">
+                  <span className="text-xs font-bold">Select Categ</span>
+                  <KeyboardArrowUpIcon color="black" fontSize="14dp" />
+                </div>
+                <div className="flex justify-between items-center px-1 py-3 rounded-lg shadow-lg">
+                  <span className="text-xs font-bold">Select Proces</span>
+                  <KeyboardArrowUpIcon color="black" fontSize="14dp" />
+                </div>
+              </div>
+            </div>
+            <div className="px-8 py-4">
+              <buttton className="rounded-xl bg-blue-800 flex justify-between py-3 px-4 my-2 text-white w-fit">
+                <AddIcon />
+                <p>Sub-thread</p>
+              </buttton>
+              <Form label="Summary for Thread A" />
+            </div>
+          </div>
         </Board>
-        <Board>
+        <Board
+         title="4SA Method"
+         icon={<InfoIcon color="white" />}
+         header="To explore more read more"
+        >
 
 
           
