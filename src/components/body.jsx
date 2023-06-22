@@ -168,7 +168,7 @@ const Body = () => {
     <div className="px-14 py-5" > 
       The 4SA Method , How to bring a idea into progress ?
       </div>
-      <div className="py-5 text-gray-400 font-semibold justify-items-end" > 
+      <div className="py-5 text-gray-400 font-semibold content-between"> 
       See More
       </div>
 
