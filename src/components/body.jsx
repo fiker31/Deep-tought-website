@@ -138,7 +138,7 @@ const Body = () => {
               <div className="text-sm text-gray-400/100 font-semibold">
               Help
               </div>
-              
+
           </ul>
         </nav>
         <TurnLeftIcon color="disabled" />
@@ -159,7 +159,10 @@ const Body = () => {
          icon={<InfoIcon color="white" />}
          header="To explore more read more"
         >
-
+      <div className="flex p-2 bg-yellow-100 items-center">
+              <KeyboardArrowUpIcon color="black"/>
+              <h3 className="ml-16 font-bold text-lg">Introduction</h3>
+            </div>
 
           
         </Board>
