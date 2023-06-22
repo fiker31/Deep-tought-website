@@ -150,11 +150,7 @@ const Body = () => {
 
        </div>
       </div>
-      
-     
-    
-    
-        </Board>
+      </Board>
         <Board
          title="4SA Method"
          icon={<InfoIcon color="white" />}
