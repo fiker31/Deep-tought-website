@@ -159,10 +159,19 @@ const Body = () => {
          icon={<InfoIcon color="white" />}
          header="To explore more read more"
         >
-      <div className="flex p-2 bg-yellow-100 items-center">
-              <KeyboardArrowUpIcon color="black"/>
-              <h3 className="ml-16 font-bold text-lg">Introduction</h3>
-            </div>
+    
+    <div class=" bg-gray-100 w-full h-14 px-10 items-center flex mx-10 relative">
+    
+    <KeyboardArrowUpIcon color="black" />
+              <h3 className="ml-16 text-lg">Introduction</h3>
+    </div>
+    <div className="px-14 py-5" > 
+      The 4SA Method , How to bring a idea into progress ?
+      </div>
+      <div className="py-5 text-gray-400 font-semibold justify-items-end" > 
+      See More
+      </div>
+
 
           
         </Board>
