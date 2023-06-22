@@ -25,21 +25,29 @@ const Body = () => {
           Explore the world of managment
         </h1>
         <p className="text-gray-700">
-          As a project manager, you play an important role in the project
-          manager, you play an important role in the project manager, you play
-          an important role in the project manager, you play an important role
-          in the project manager, you play an important role in the
+        As a project manager, you play an important reole in leading a project through initiation, planning, execution, monitoring, controlling 
+        and completion. How? Do you want to manage each and every step of your life?
         </p>
       </div>
       <div className="grid grid-cols-2 gap-10">
-        <Board></Board>
+        <Board
+         title="Technical Project Managment"
+         icon={<InfoIcon color="white" />}
+         header="Story of Alignment Scope of Agility Specific Accountable Staggering Approach"
+        >
+          <div>
+            
+          </div>
+
+
+        </Board>
         <Board
           title="Threadbuild"
           icon={<InfoIcon color="white" />}
           header="Watch the video and threadbuild, and jot out key threads while watching the video"
         >
           <div>
-            <div className="flex p-2 bg-gray-100 items-center">
+            <div className="flex p-2 bg-yellow-100 items-center">
               <KeyboardArrowUpIcon color="black" />
               <h3 className="ml-16 font-bold text-lg">Thread A</h3>
             </div>
@@ -73,6 +81,16 @@ const Body = () => {
               <Form label="Summary for Thread A" />
             </div>
           </div>
+        </Board>
+        <Board>
+
+
+
+        </Board>
+        <Board>
+
+
+          
         </Board>
       </div>
     </div>
