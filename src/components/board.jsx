@@ -1,16 +1,38 @@
 import React from "react";
-import Board from "./board";
 
-const Journeyboard = () => {
+const Board = ({ title, icon, children, vertical, header }) => {
   return (
-    <div className="w-48">
-      <Board>
-        <button className="border border-purple-500 rounded-md px-4 py-2 bg-transparent hover:bg-purple-500 hover:text-white transition-colors text-lg">
-          1
-        </button>
-      </Board>
+    <div
+      className={`flex ${
+        vertical ? "flex-row" : "flex-col"
+      } bg-white rounded-lg border-2 border-gray-300 shadow-xl overflow-hidden w-full h-full`}
+    >
+      <div
+        className={`bg-black flex items-center justify-center relative ${
+          vertical ? "px-2 h-full" : "h-10 w-full"
+        }`}
+      >
+        <span className={`text-white ${vertical ? "text-vertical" : ""}`}>
+          {title}
+        </span>
+
+        <div
+          className={`absolute text-white ${vertical ? "top-1" : "right-3"}`}
+        >
+          {icon}
+        </div>
+      </div>
+      {header ? (
+        <div className="border-b shadow-md px-3 py-6">
+          <span className="font-bold">Description: </span>
+          {header}
+        </div>
+      ) : (
+        <></>
+      )}
+      <div>{children}</div>
     </div>
   );
 };
 
-export default Journeyboard;
+export default Board;
