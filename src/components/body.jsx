@@ -197,6 +197,7 @@ const Body = () => {
 
           
         </Board>
+        <img src={blueicons} alt="icons" className="" />
       </div>
     </div>
   );
