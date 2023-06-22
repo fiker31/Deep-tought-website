@@ -13,6 +13,7 @@ import TurnLeftIcon from "@mui/icons-material/TurnLeft";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import OpenWithIcon from "@mui/icons-material/OpenWith";
 import blueicons from "../assets/blueicons.svg";
+import SpaIcon from "@mui/icons-material/Spa";
 
 const Body = () => {
   return (
@@ -65,7 +66,7 @@ const Body = () => {
                   <LightbulbIcon color="black" />
                   <CommentIcon color="black" />
                   <LiveHelpIcon color="black" />
-                  <LiveHelpIcon color="black" />
+                  <SpaIcon color="black" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-x-0.5">

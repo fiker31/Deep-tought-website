@@ -4,10 +4,15 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const NoticeBoard = () => {
   return (
-    <div className="w-full jorney_board">
-      <div className="h-72 pl-10">
-        <Board vertical title="Notice Board" icon={<CloseIcon color="white" />}>
-          <div className="flex justify-center w-full"></div>
+    <div className="jorney_board w-60">
+      <div className="h-96 pl-32">
+        <Board
+          vertical
+          title="Notice Board"
+          className="tracking-wider"
+          icon={<CloseIcon color="white" />}
+        >
+          <div className="justify-center w-full flex"></div>
         </Board>
       </div>
     </div>
