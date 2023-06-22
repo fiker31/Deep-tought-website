@@ -197,7 +197,7 @@ const Body = () => {
 
           
         </Board>
-        <img src={blueicons} alt="icons" className="" />
+        <img src={blueicons} alt="icons" className="mx-auto justify-end" />
       </div>
     </div>
   );
