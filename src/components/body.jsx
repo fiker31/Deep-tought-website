@@ -12,7 +12,6 @@ import TurnRightIcon from "@mui/icons-material/TurnRight";
 import TurnLeftIcon from "@mui/icons-material/TurnLeft";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import OpenWithIcon from "@mui/icons-material/OpenWith";
-import blueicons from "../assets/blueicons.svg";
 import SpaIcon from "@mui/icons-material/Spa";
 
 const Body = () => {
@@ -94,46 +93,57 @@ const Body = () => {
           icon={<InfoIcon color="white" />}
           header="Write a 300 - 400 word article from your thread . Publish your understanding and showcase your understanding to the entire world "
         >
-          <div className="px-5 py-7 font-semibold text-lg">Title</div>
-          <div className="px-4 py-2 ">
-            <textarea className="flex-1 rounded-xl shadow-grey shadow-2xl border border-gray-200 resize-none w-96 h-full"></textarea>
-          </div>
-          <div className="px-5 py-7 font-semibold text-lg">Content</div>
+          <div className="p-5">
+            <div className="py-3 font-semibold text-lg">Title</div>
+            <input
+              className="rounded-xl shadow-gray-300 shadow-lg w-full p-3"
+              type="text"
+            />
 
-          <div className="px-4 py-2">
-            <div class="box-border h-48 w-96 p-4 border">
-              <nav className="w-full flex justify-between items-center navbar">
-                <ul className="list-none sm:flex hidden justify-end items-center">
-                  <div className="text-sm text-gray-400/100 font-semibold">
-                    File
+            <div className="mt-10 mb-3 font-semibold text-lg">Content</div>
+
+            <div className="py-2 shadow-gray-300 shadow-lg">
+              <div class="box-border w-full p-4 shadow-gray-300 shadow-lg rounded-t-lg">
+                <nav className="w-full flex justify-between items-center navbar">
+                  <ul className="list-none sm:flex hidden justify-end items-center">
+                    <div className="text-sm text-gray-400/100 font-semibold">
+                      File
+                    </div>
+                    <div className=" relative mx-2 text-sm text-gray-400/100 font-semibold">
+                      Edit
+                    </div>
+                    <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
+                      View
+                    </div>
+                    <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
+                      Insert
+                    </div>
+                    <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
+                      Format
+                    </div>
+                    <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
+                      Tools
+                    </div>
+                    <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
+                      Table
+                    </div>
+                    <div className="text-sm text-gray-400/100 font-semibold">
+                      Help
+                    </div>
+                  </ul>
+                </nav>
+                <div className="flex pt-5 items-center">
+                  <TurnLeftIcon color="disabled" />
+                  <TurnRightIcon className="relative mx-2" color="disabled" />
+                  <OpenWithIcon className="relative mx-3" color="disabled" />
+                  <div className="py-0.5 pl-2 pr-10 mr-1 bg-gray-200 text-left text-gray-500">
+                    Paragraph
                   </div>
-                  <div className=" relative mx-2 text-sm text-gray-400/100 font-semibold">
-                    Edit
-                  </div>
-                  <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
-                    View
-                  </div>
-                  <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
-                    Insert
-                  </div>
-                  <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
-                    Format
-                  </div>
-                  <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
-                    Tools
-                  </div>
-                  <div className="relative mx-2 text-sm text-gray-400/100 font-semibold">
-                    Table
-                  </div>
-                  <div className="text-sm text-gray-400/100 font-semibold">
-                    Help
-                  </div>
-                </ul>
-              </nav>
-              <TurnLeftIcon color="disabled" />
-              <TurnRightIcon className="relative mx-2" color="disabled" />
-              <OpenWithIcon className="relative mx-3" color="disabled" />
-              <MoreHorizIcon color="disabled" />
+                  <MoreHorizIcon color="disabled" />
+                </div>
+              </div>
+
+              <textarea className="h-40 rounded-b-lg w-full border-0 resize-none bg-transparent focus:outline-none p-5"></textarea>
             </div>
           </div>
         </Board>
@@ -142,36 +152,37 @@ const Body = () => {
           icon={<InfoIcon color="white" />}
           header="To explore more read more"
         >
-          <div class=" bg-gray-100 w-full h-14 px-10 items-center flex mx-10 relative">
-            <KeyboardArrowUpIcon color="black" />
-            <h3 className="ml-1 text-lg font-semibold">Introduction</h3>
-          </div>
-          <div className="px-14 py-5">
-            The 4SA Method , How to bring a idea into progress ?
-          </div>
-          <div className="py-5 text-gray-400 font-semibold content-between">
-            See More
-          </div>
-          <div class=" bg-white w-full h-14 px-10 items-center border-2 flex mx-10 relative">
-            <KeyboardArrowUpIcon color="black" />
-            <h3 className="ml-1 text-lg font-semibold">Thread A</h3>
-          </div>
-          <div className="px-14 py-5">
-            How are you going to develop your stratergy ? Which method are you
-            going to use to develop a stratergy ? What if the project is
-            lengthy?
-          </div>
-          <div className="py-5 text-gray-400 font-semibold content-between">
-            See More
-          </div>
-          <div class=" bg-white w-full h-14 px-10 items-center border-2 flex mx-16 relative">
-            <h3 className="ml-1 text-lg font-semibold">Example 1</h3>
-          </div>
-          <div className="px-14 py-5">
-            You have a concept , How will you put into progress?
+          <div className="px-5">
+            <div class=" bg-gray-100 w-full px-5 py-3 flex items-center">
+              <KeyboardArrowUpIcon color="black" />
+              <h3 className="ml-3 text-lg font-semibold">Introduction</h3>
+            </div>
+            <div className="px-2 py-5">
+              The 4SA Method , How to bring a idea into progress ?
+            </div>
+            <div className="py-5 text-gray-400 font-semibold text-right">
+              See More
+            </div>
+            <div class=" bg-white w-full px-5 py-3 items-center border-2 flex relative">
+              <KeyboardArrowUpIcon color="black" />
+              <h3 className="ml-3 text-lg font-semibold">Thread A</h3>
+            </div>
+            <div className="px-2 py-5">
+              How are you going to develop your stratergy ? Which method are you
+              going to use to develop a stratergy ? What if the project is
+              lengthy?
+            </div>
+            <div className="py-5 text-gray-400 font-semibold text-right">
+              See More
+            </div>
+            <div class=" bg-white w-full px-5 py-3 items-center border-2 flex relative">
+              <h3 className="ml-3 text-lg font-semibold">Example 1</h3>
+            </div>
+            <div className="px-2 py-5">
+              You have a concept , How will you put into progress?
+            </div>
           </div>
         </Board>
-        <img src={blueicons} alt="icons" className="mx-auto justify-end" />
       </div>
     </div>
   );

@@ -1,20 +1,20 @@
 import React from "react";
 
-const Board = ({ title, icon, children, vertical, header }) => {
+const Board = ({ title, icon, children, vertical, header, className }) => {
   return (
     <div
       className={`flex ${
         vertical ? "flex-row" : "flex-col"
-      } bg-white rounded-3xl border-2 border-gray-300 shadow-xl overflow-hidden w-full h-full`}
+      } bg-white rounded-3xl border-2 border-gray-300 shadow-xl overflow-hidden w-full h-full ${className}`}
     >
       <div
         className={`bg-black flex items-center justify-center relative ${
-          vertical ? "px-2 h-full" : "h-10 w-full"
+          vertical ? "h-full w-10" : "h-10 w-full"
         }`}
       >
-        <span className={`text-white ${vertical ? "text-vertical" : ""}`}>
+        <p className={`text-white mx-2 ${vertical ? "text-vertical" : ""}`}>
           {title}
-        </span>
+        </p>
 
         <div
           className={`absolute text-white ${vertical ? "top-1" : "right-3"}`}
