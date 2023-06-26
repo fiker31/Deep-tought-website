@@ -14,8 +14,14 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import OpenWithIcon from "@mui/icons-material/OpenWith";
 import SpaIcon from "@mui/icons-material/Spa";
 import { useState, useEffect } from "react";
+import data from "../../dt.json";
 
 const Body = () => {
+  const [tasks, setTasks] = useState([]);
+  useEffect(() => {
+    setTasks(data.tasks);
+  }, []);
+
   return (
     <div className="grid gap-y-10">
       <div className="flex justify-between items-center">
@@ -185,6 +191,44 @@ const Body = () => {
           </div>
         </Board>
       </div>
+
+      <h1 className="text-2xl font-bold mb-4">Tasks List</h1>
+      <ul>
+        {tasks.map((task) => (
+          <li key={task.task_id} className="mb-8">
+            <h2 className="text-xl font-bold mb-2">{task.task_title}</h2>
+            <p className="mb-4">{task.task_description}</p>
+            <h3 className="text-lg font-bold mb-2">Assets</h3>
+            <ul>
+              {task.assets.map((asset) => (
+                <li key={asset.asset_id} className="mb-4">
+                  <h4 className="text-md font-bold mb-2">
+                    {asset.asset_title}
+                  </h4>
+                  <p className="mb-2">{asset.asset_description}</p>
+                  {asset.asset_content_type === "video" && (
+                    <iframe
+                      width="560"
+                      height="315"
+                      src={asset.asset_content}
+                      title={asset.asset_title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="mb-2"
+                    ></iframe>
+                  )}
+                  {asset.asset_content_type === "threadbuilder" && (
+                    <p className="mb-2">Display threadbuilder component here</p>
+                  )}
+                  {asset.asset_content_type === "article" && (
+                    <p className="mb-2">Display article input component here</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
