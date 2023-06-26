@@ -13,6 +13,7 @@ import TurnLeftIcon from "@mui/icons-material/TurnLeft";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import OpenWithIcon from "@mui/icons-material/OpenWith";
 import SpaIcon from "@mui/icons-material/Spa";
+import { useState, useEffect } from "react";
 
 const Body = () => {
   useEffect(() => {
@@ -35,17 +36,6 @@ const Body = () => {
   }
   return (
     <div className="grid gap-y-10">
-      <div>
-        <h2>{projectData.title}</h2>
-        <p>{projectData.short_description}</p>
-        <img src={projectData.project_image} alt={projectData.title} />
-        <ul>
-          {projectData.learning_outcomes.map((outcome, index) => (
-            <li key={index}>{outcome}</li>
-          ))}
-        </ul>
-      </div>
-
       <div className="flex justify-between items-center">
         <h1 className="text-blue-800 text-2xl font-bold">
           Technical Project Managment
@@ -212,6 +202,16 @@ const Body = () => {
             </div>
           </div>
         </Board>
+      </div>
+      <div>
+        <h2>{projectData.title}</h2>
+        <p>{projectData.short_description}</p>
+        <img src={projectData.project_image} alt={projectData.title} />
+        <ul>
+          {projectData.learning_outcomes.map((outcome, index) => (
+            <li key={index}>{outcome}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
