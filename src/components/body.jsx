@@ -16,25 +16,6 @@ import SpaIcon from "@mui/icons-material/Spa";
 import { useState, useEffect } from "react";
 
 const Body = () => {
-  const [projectData, setProjectData] = useState(null);
-  useEffect(() => {
-    async function fetchProjectData() {
-      try {
-        const response = await fetch(
-          "https://dev.deepthought.education/assets/uploads/files/files/others/ddugky_project.json"
-        );
-        const data = await response.json();
-        setProjectData(data);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    fetchProjectData();
-  }, []);
-
-  if (!projectData) {
-    return <div>Loading...</div>;
-  }
   return (
     <div className="grid gap-y-10">
       <div className="flex justify-between items-center">
@@ -203,16 +184,6 @@ const Body = () => {
             </div>
           </div>
         </Board>
-      </div>
-      <div>
-        <h2>{projectData.title}</h2>
-        <p>{projectData.short_description}</p>
-        <img src={projectData.project_image} alt={projectData.title} />
-        <ul>
-          {projectData.learning_outcomes.map((outcome, index) => (
-            <li key={index}>{outcome}</li>
-          ))}
-        </ul>
       </div>
     </div>
   );
