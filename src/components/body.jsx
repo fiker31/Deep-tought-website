@@ -219,4 +219,3 @@ const Body = () => {
 };
 
 export default Body;
-//x:581.8209 px w:122.6368 px y:244.053 px h:314.2324 px
