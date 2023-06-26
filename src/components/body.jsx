@@ -16,6 +16,7 @@ import SpaIcon from "@mui/icons-material/Spa";
 import { useState, useEffect } from "react";
 
 const Body = () => {
+  const [projectData, setProjectData] = useState(null);
   useEffect(() => {
     async function fetchProjectData() {
       try {
@@ -30,7 +31,7 @@ const Body = () => {
     }
     fetchProjectData();
   }, []);
-  const [projectData, setProjectData] = useState(null);
+
   if (!projectData) {
     return <div>Loading...</div>;
   }
