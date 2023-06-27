@@ -9,7 +9,6 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo1} alt="deepthought" className="w-[250px] h-[32px] " />
-
       <ul className="list-none sm:flex hidden justify-end items-center ml-auto">
         <div className="h-8 w-8 flex items-center justify-center rounded-full bg-blue-500 mx-3">
           <HouseIcon className="h-7 w-7 text-white" />
