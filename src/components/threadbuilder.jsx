@@ -17,8 +17,9 @@ const threadbuilder = () => {
         <div key={thread.id}>
           <h1>{thread.title}</h1>
           <p>{thread.body}</p>
+
         </div>
-      ))}
+      ))} 
     </div>
   );
   return (
