@@ -1,4 +1,3 @@
-import React from "react";
 import Board from "./board";
 import InfoIcon from "@mui/icons-material/Info";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -13,7 +12,7 @@ import TurnLeftIcon from "@mui/icons-material/TurnLeft";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import OpenWithIcon from "@mui/icons-material/OpenWith";
 import SpaIcon from "@mui/icons-material/Spa";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import data from "../../dt.json";
 
 const Body = () => {
@@ -24,6 +23,7 @@ const Body = () => {
 
   return (
     <div className="grid gap-y-10">
+      <threadbuilder />
       <div className="flex justify-between items-center">
         <h1 className="text-blue-800 text-2xl font-bold">
           Technical Project Managment
