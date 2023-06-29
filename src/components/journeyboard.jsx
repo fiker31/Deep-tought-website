@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Board from "./board";
+import data from "../../dt.json";
 
 const Journeyboard = () => {
   const [showContent, setShowContent] = useState(false);
@@ -27,15 +28,18 @@ const Journeyboard = () => {
       <Board>
         {showContent ? (
           <ul className="list-disc mx-10" ref={contentRef}>
-            <li className="pl-2 my-5 font-bold text-md">
-              Explore the world of management
-            </li>
-            <div className="ml-2">
-              <li>Technical Project Management</li>
-              <li>Threadbuild</li>
-              <li>Structure your pointers</li>
-              <li>4SA Method</li>
-            </div>
+            {data.tasks.map((task) => (
+              <div key={task.task_id}>
+                <li className="pl-2 my-5 font-bold text-md">
+                  {task.task_title}
+                </li>
+                <div className="ml-2">
+                  {task.assets.map((asset) => (
+                    <li key={asset.asset_id}>{asset.asset_title}</li>
+                  ))}
+                </div>
+              </div>
+            ))}
           </ul>
         ) : (
           <div className="flex justify-center w-full p-4">
